@@ -1,73 +1,109 @@
-# React + TypeScript + Vite
+# Perfume Luxe - Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **luxury/romantic perfume landing page** built with **React, Vite, TailwindCSS, and TypeScript**.
+This project showcases a premium perfume store with an elegant dark theme, product highlights, testimonials, and a call-to-action section.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- 🎨 **Elegant Dark Theme** with gold accents for a luxury feel
+- 📱 **Responsive Design** (mobile-friendly with TailwindCSS)
+- 🛍️ **Featured Perfumes Section** with product images, names, and prices
+- 💬 **Customer Testimonials** for social proof
+- ⚡ **Fast & Lightweight** powered by Vite
+- 🔒 Written in **TypeScript** for type safety
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React** (UI library)
+- **Vite** (development + build tool)
+- **TypeScript** (type safety)
+- **TailwindCSS** (styling)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📂 Project Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+perfume-landing/
+├── public/                # Static assets (images, icons, etc.)
+│   └── images/
+│       ├── perfume1.jpg
+│       ├── perfume2.jpg
+│       └── perfume3.jpg
+├── src/
+│   ├── App.tsx            # Main app component
+│   ├── LandingPage.tsx    # Landing page component
+│   ├── main.tsx           # App entry point
+│   └── index.css          # TailwindCSS setup
+├── package.json
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚡ Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/perfume-landing.git
+cd perfume-landing
 ```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Run Development Server
+
+```bash
+npm run dev
+```
+
+Visit [http://localhost:5173](http://localhost:5173) in your browser.
+
+### 4. Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## 🖼️ Adding Images
+
+You can add your own perfume product images in the `public/images/` folder.
+Then update `LandingPage.tsx`:
+
+```tsx
+const perfumes = [
+  { name: "Velour Noir", price: "$180", img: "/images/perfume1.jpg" },
+  { name: "Golden Dusk", price: "$210", img: "/images/perfume2.jpg" },
+  { name: "Eternal Rose", price: "$160", img: "/images/perfume3.jpg" },
+];
+```
+
+---
+
+## 📌 Future Improvements
+
+- Add **navigation bar** (Home, Shop, About, Contact)
+- Implement **shopping cart functionality**
+- Connect to a **backend API for dynamic products**
+- Add **animations** (e.g., Framer Motion) for smoother interactions
+
+---
+
+## 📜 License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
+👤 Developed by **Richard Akintunde**

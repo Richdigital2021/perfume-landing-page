@@ -19,6 +19,22 @@ const LandingPage: React.FC = () => {
       price: "$160",
       img: "./images/Velour Noir.jpg",
     },
+    {
+      name: "Velour",
+      price: "$150",
+      img: "./images/perfume1.jpg",
+    },
+    {
+      name: "Dusk",
+      price: "$110",
+      img: "./images/Golden-dusk.jpg",
+    },
+
+    {
+      name: "Rose",
+      price: "$150",
+      img: "./images/Velour Noir.jpg",
+    },
   ];
 
   const testimonials: { name: string; text: string }[] = [
