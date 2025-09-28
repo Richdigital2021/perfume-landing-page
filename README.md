@@ -100,6 +100,10 @@ const perfumes = [
 
 ---
 
+## Live URL
+
+[Live View](https://perfume-landing-page-pi.vercel.app/)
+
 ## 📜 License
 
 This project is open-source and available under the **MIT License**.
