@@ -4,36 +4,36 @@ import React from "react";
 const LandingPage: React.FC = () => {
   const perfumes: { name: string; price: string; img: string }[] = [
     {
-      name: "Velour Noir",
+      name: "Prada",
       price: "$180",
       img: "./images/perfume1.jpg",
     },
     {
-      name: "Golden Dusk",
+      name: "Coco Noir",
       price: "$210",
       img: "./images/Golden-dusk.jpg",
     },
 
     {
-      name: "Eternal Rose",
-      price: "$160",
+      name: "Bleu de Chanel",
+      price: "$180",
       img: "./images/Velour Noir.jpg",
     },
     {
-      name: "Velour",
+      name: "Jo Malone",
       price: "$150",
-      img: "./images/perfume1.jpg",
+      img: "./images/Jo Malone.jpg",
     },
     {
-      name: "Dusk",
+      name: "L'eau Laurissi",
       price: "$110",
-      img: "./images/Golden-dusk.jpg",
+      img: "./images/Leau.jpg",
     },
 
     {
-      name: "Rose",
+      name: "Versace",
       price: "$150",
-      img: "./images/Velour Noir.jpg",
+      img: "./images/Versace.jpg",
     },
   ];
 
@@ -82,7 +82,7 @@ const LandingPage: React.FC = () => {
               <img
                 src={perfume.img}
                 alt={perfume.name}
-                className="w-full h-80 object-cover rounded-xl mb-5"
+                className="w-full h-60 object-cover rounded-xl mb-5"
               />
               <h3 className="text-2xl font-bold text-white mb-2">
                 {perfume.name}
@@ -111,6 +111,40 @@ const LandingPage: React.FC = () => {
               <h4 className="font-bold text-yellow-400">{review.name}</h4>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-20 px-6 bg-gray-950">
+        <h2 className="text-3xl font-semibold text-center mb-10 text-yellow-400">
+          Contact Us
+        </h2>
+        <div className="max-w-xl mx-auto bg-gray-900 rounded-2xl p-8 shadow-lg border border-gray-700">
+          <form className="flex flex-col gap-6">
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="p-3 rounded bg-gray-800 text-gray-200 border border-gray-700 focus:border-yellow-400 outline-none"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="p-3 rounded bg-gray-800 text-gray-200 border border-gray-700 focus:border-yellow-400 outline-none"
+              required
+            />
+            <textarea
+              placeholder="Your Message"
+              className="p-3 rounded bg-gray-800 text-gray-200 border border-gray-700 focus:border-yellow-400 outline-none min-h-[120px]"
+              required
+            ></textarea>
+            <button
+              type="submit"
+              className="bg-gradient-to-r from-yellow-600 to-yellow-400 text-black font-semibold px-8 py-3 rounded-full text-lg hover:opacity-90 transition"
+            >
+              Send Message
+            </button>
+          </form>
         </div>
       </section>
 
